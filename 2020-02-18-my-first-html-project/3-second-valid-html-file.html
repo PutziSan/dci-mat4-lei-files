@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- you can insert an html-barebone via vs code with this workflow:
+1. create a new html-file (with the ".html" filename extension!)
+1. on the new file: write a single exclamation mark (!)
+2. press enter or press tab
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>
+      you can insert some content inside the p-tag:
+      <a href="https://google.com">
+        this is my link text
+      </a>
+    </p>
+
+    <p>
+      nesting tags inside each other is an important feature of html:
+      <a href="">this is a nested link</a>
+    </p>
+
+    <!-- the ul-element defines an "unordered list"  -->
+    <ul>
+      <!-- the li-element stands for "list" and
+         must be inside an ul-tag  -->
+      <li>this is the first child</li>
+      <li>this is the second child</li>
+    </ul>
+
+    <!-- the ol-element defines an "ordered list"  -->
+    <ol>
+      <!-- the li-element stands for "list" and
+       must be inside an ul-tag  -->
+      <li>this is the first child</li>
+      <li>this is the second child</li>
+    </ol>
+
+    <ul>
+      <!-- this ul-element has no child at all -->
+      <!-- this is a comment and not a child!   -->
+    </ul>
+
+    <a href="https://google.com"></a>
+
+    <!-- the relation between ul-element and li-element is called
+    a "parent-child-relationship"
+    => "li" is th child of "ul"
+    => "ul" is the parent of "li"
+    ! an element has always ONE parent!
+    but an element can have 0, 1 or multiple children
+    -->
+
+    <!-- you can nest elements as often as you want: -->
+
+    <ul>
+      <!-- this li-element is a child of ul -->
+      <!-- this li-element is also the parent of the anchor-tag -->
+      <li>
+        this is my content with another nested element:
+        <a href="https://google.com">
+          this stands inside the anchor, but is also inside the list
+        </a>
+      </li>
+    </ul>
+
+    <!-- an example for a nested unordered list: -->
+    <ul>
+      <li>
+        chapter 1
+        <ul>
+          <li>chapter 1.1</li>
+          <li>
+            chapter 1.2
+            <ul>
+              <li>chapter 1.2.1</li>
+              <li>chapter 1.2.2</li>
+              <li>chapter 1.2.3</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <p>next exericse:</p>
+    <ul>
+      <li>
+        create a new html-page and use the shortcut to create your html-barebone
+      </li>
+      <li>create some ordered and unordered lists</li>
+      <li>
+        create some paragraphs and headings (h1-h6) with nested anchor-elements
+      </li>
+      <li>now insert an anchor-tag inside a list-element</li>
+    </ul>
+  </body>
+</html>

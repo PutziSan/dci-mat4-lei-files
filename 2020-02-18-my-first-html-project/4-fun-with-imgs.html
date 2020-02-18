@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>
+      this is a normal element with start- and closing-tag
+    </p>
+    <h2>so is this!</h2>
+
+    <p>
+      this is a self-closing-element: the break-line-element:
+      <!-- the br-element will insert a line break:  -->
+      <br />
+      this is the next sentence and is on a new line
+    </p>
+    <!-- a self closing tag is 
+        not allowed to use with a start- and closing-tag -->
+    <!-- <br></br> <= THIS IS NOT VALID -->
+
+    <!-- a self closing element consists only of the start-tag and do not have any content  -->
+
+    <!-- with an img-element I can display images 
+        from my local folder like this:  -->
+    <img src="cover.jpg" width="100px" />
+
+    <!-- we also can display images, which are already hosted on the internet:  -->
+    <img
+      src="https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/ce2ece60-9b32-11e6-95ab-00163ed833e7/260663710/the-test-fun-for-friends-screenshot.jpg"
+      width="100px"
+    />
+
+    <!-- using an url as an attribute-value is already known: we know it from the anchor-tag: -->
+    <a href="https://google.com">this link will lead you to google</a>
+
+    <br />
+    <p>example for a broken image:</p>
+
+    <!-- the alt tag is also very important for search-engines 
+        like google so that they know what the image presents -->
+    <img
+      width="100px"
+      src="cover.jpg"
+      alt="this content will be shown if the image cannot be displayed"
+    />
+
+    <p>next exercise:</p>
+    <ul>
+      <li>
+        again: create a new html file and create the html barebone with the
+        exclamation mark shortcut
+      </li>
+      <li>
+        inside the body: insert some images, play around with the width, alt and
+        src-attribute
+      </li>
+      <li>
+        create images for local images (downloaded and added to your folder)
+      </li>
+      <li>create images for online images (with a source to another domain)</li>
+      <li>use the br-element inside text to check how the linebreak works</li>
+      <li>
+        extra 1: create a multiple nested list (chapter example from the other
+        file)
+      </li>
+      <li>extra 2: check the mdn documentation about the img-tag</li>
+    </ul>
+  </body>
+</html>
