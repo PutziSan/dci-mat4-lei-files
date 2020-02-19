@@ -1,0 +1,51 @@
+/* the selector can be any valid html element 
+(e.g. p, h1, div, ...) */
+
+/* selecting an element via the tag-name
+is called "element-selector" */
+body {
+  /* background-color: sienna; */
+}
+
+p {
+  background-color: seagreen;
+}
+
+/* we define a class selector with 
+the leading dot (".")
+and the class-name
+*/
+/* You can use this class with the 
+class-attribute in your html */
+.my-first-class {
+  background-color: skyblue;
+}
+
+.my-second-class {
+  color: tomato;
+}
+
+/* always try to use good names, 
+which expresses how they look  */
+.btn {
+  color: teal;
+  background-color: yellowgreen;
+  /* ... */
+}
+
+/* ID-SELECTOR: */
+/* the id-selector needs a leading hashtag ("#")
+and the name of your given id */
+/* it will select the element 
+which have the corresponding id-attribute */
+#my-first-id {
+  color: rebeccapurple;
+}
+
+#text-green {
+  color: green;
+}
+
+#bg-red {
+  background-color: red;
+}

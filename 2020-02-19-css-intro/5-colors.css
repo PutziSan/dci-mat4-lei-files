@@ -1,0 +1,28 @@
+/* you can define a color in multiple ways: */
+.my-color-example {
+  /* first: using the name of the color */
+  color: yellow;
+}
+
+.rgb-color-example {
+  /* you can define an rgb color with values from 0 to 255 */
+  color: rgb(/* red: */ 0, /* green */ 0, /* blue */ 255);
+}
+
+.hex-color-example {
+  /* very often used: defining the color with a hex-value */
+  color: #7ba0e8;
+}
+
+.hsl-color-example {
+  color: hsl(0, 50%, 80%);
+  background-color: hsl(0, 50%, 10%);
+}
+
+.rgba-color-example {
+  color: rgba(255, 0, 0, 0.8);
+}
+
+.bg-green {
+  background-color: green;
+}

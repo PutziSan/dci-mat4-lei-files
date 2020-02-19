@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="3-fun-with-selectors.css" />
+  </head>
+  <body>
+    <p>some content</p>
+
+    <!-- (developers also say for words "string", which is a datatype) -->
+    <!-- the class-attribute can be normal words 
+        you can use as many classes 
+          as you want for one single element
+        to add another class, seperate them with an empty space (" ")
+    -->
+    <p class="my-first-class my-second-class">
+      content for the paragraph with my first class
+    </p>
+
+    <div class="my-first-class">
+      this is a div
+    </div>
+
+    <div class="btn">
+      this btn class was only declared once
+    </div>
+
+    <div class="btn">
+      but I can use it as much as I want
+    </div>
+
+    <!-- the value of an id can be a normal 
+        word (without empty spaces) -->
+    <!-- id stands for "identifier"
+    one single id can be used only for one html-element
+    -->
+    <div id="my-first-id">
+      this is some information about me
+    </div>
+    <!-- this is not allowed, 
+        because an id needs to be unique -->
+    <!-- <div id="my-first-id">
+      these are my hobbies
+    </div> -->
+
+    <!-- using multiple ids for one single element is not allowed -->
+    <div id="another-id with empty space" class="another-id with empty space">
+      this id will not work like you expect!
+    </div>
+
+    <!-- you can use your ide
+         to quickly create class-elements:
+         in your html:
+         - print a dot (".")
+         - print a new class name
+         - hit enter
+    => this will print a div-element with the given class
+        -->
+    <div class="my-cool-class-with-ide-help"></div>
+
+    <div class="btn"></div>
+    <!-- to print not a div-element with the dot-shortcut:
+    - print the element you want ("p")
+    - print the dot (".")
+    - print your classname
+    - hit enter
+    -->
+    <p class="your-class"></p>
+
+    <p>little exercises:</p>
+    <ul>
+      <li>create a new html-file</li>
+      <li>create a new css-file</li>
+      <li>link your html file to the new css-file</li>
+      <li>
+        use the 3 different selectors to style your elements
+        <ul>
+          <li>use the element selector (also try it for the body element)</li>
+          <li>use the class selector</li>
+          <li>use the id-selector</li>
+        </ul>
+      </li>
+      <li>give one class to multiple elements</li>
+      <li>give one element multiple classes</li>
+      <li>
+        try creating elements with classes in your html with the vs code
+        dot-shortcut
+      </li>
+    </ul>
+
+    <div id="text-green">
+      this text is green
+    </div>
+    <div id="bg-red">
+      this background will be red
+    </div>
+    <div id="text-green bg-red">
+      this text is green with red background: I composed two classes here
+      #yeeeay
+    </div>
+  </body>
+</html>

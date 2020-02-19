@@ -1,0 +1,33 @@
+.bg-green {
+  background-color: green;
+}
+
+.my-first-size {
+  /* px is one method to define the size */
+  /* for px-values you hould not use fractions
+   (like 0.5px), because the browser cannot render a half pixel */
+  height: 100px;
+}
+
+.unit-rem {
+  /* a rem is another unit:
+    1 rem means:
+    1 * font-size of your html-file
+    */
+  /* for example a height of 10 rem means:
+    10 * 16px = 160px;
+    */
+  /* rem values are great, because they help you to create a consistent layout,
+     because everything is on the same base-value */
+  height: 10rem;
+}
+
+.unit-rem-2 {
+  /* rem values accept decimal values too  */
+  height: 0.5rem;
+  width: 10rem;
+}
+
+.my-new-paragraph {
+  font-size: 2rem;
+}

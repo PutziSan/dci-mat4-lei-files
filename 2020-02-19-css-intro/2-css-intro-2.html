@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- the position of the link and style can be important
+    because the last specified rule will win, when the specificity is the same
+    -->
+    <link rel="stylesheet" href="1-my-first-css-file.css" />
+    <!-- this is a html comment -->
+    <style>
+      /* this is a css comment */
+      /* you can create a comment with the shortcut: ctrl + # */
+      /* like html comments, this text will be ignored by the css-program 
+      comments are only for you (the developer) or your colleagues */
+
+      /* a css-rule was written by:
+      the selector (p), 
+      the opening curly brace ( { ),
+        the declarations,
+        the closing curly brace ( } )
+        */
+      p {
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        you can define for a single element multiple properties (like color)
+        e.g. you can define the color inside the style-attribute and inside 
+        the style-element in the head
+        what finally will be applied and displayed depends on the "specificty"
+     -->
+    <p>this is styled via the css-rule in the head</p>
+
+    <p>
+      this has the default color, which I defined in the css-file. This is
+      great!
+    </p>
+
+    <p>
+      again my consistent color which I defined in the css-file
+    </p>
+
+    <p style="color: red;">LOOK, THIS IS IMPORTANT!!!</p>
+
+    <p>exercise:</p>
+    <ul>
+      <li>create a new html-file</li>
+      <li>
+        again: create some styles with the style-attribute, the style-element
+        inside the head and your external css-file via link
+      </li>
+      <li>
+        create the color-property for the p-element on this 3 places, check
+        which color will win and use the chrome inspect-tool to validate the
+        correct color
+      </li>
+    </ul>
+  </body>
+</html>

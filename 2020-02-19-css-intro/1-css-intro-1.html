@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- inside the style attribute we can write CSS:
+CSS stands for Cascading Style Sheets
+- with CSS you can control the layout of your webpage 
+    (and also of multiple webpages all at once)
+- "Cascading" => why? wait a few minutes ;-)
+-->
+
+    <!-- the style tag in the head controls the layout of my page: -->
+
+    <!-- 
+a css rule consists of:
+- the selector (in this case: p)
+- multiple declarations
+    - a declaration consists of 
+       - property-name (e.g. background-color)
+       - value (darkgreen)
+     -->
+    <style>
+      p {
+        background-color: darkgreen;
+        color: darkred;
+      }
+    </style>
+
+    <!-- to link a css-file to my html file it needs:
+the rel-attribute, which must be "stylesheet"
+the href -attribute links to the css-file
+-->
+    <link rel="stylesheet" href="1-my-first-css-file.css" />
+  </head>
+  <body>
+    <!-- note: HTML is the abrevation for
+HyperText Markup Language
+-->
+
+    <!-- you can insert css in different ways:-->
+
+    <!--  the first way: use the 
+    style-attribute on your html-elements: -->
+    <div
+      style="background-color: rgba(0, 255, 255, 0.253); height: 100px; "
+    ></div>
+    <p style="background-color: brown; ">
+      my cool content with a coloured background
+    </p>
+    <h1 style="color:darkgoldenrod">
+      this text will be printed with the color: darkgoldenrod
+    </h1>
+
+    <!-- the next way to insert css: use the style-tag -->
+    <!-- the style here is defined 
+        inside the head via the style-tag -->
+    <p>
+      this should have a darkgreen background-color and a darkred color
+    </p>
+
+    <!-- the third way to insert css, use an external css-file: -->
+    <!-- the style here is defined inside the css-file -->
+    <!-- the css-file is linked via the link-element inside the head-tag  -->
+    <h1>my cool title, this will be styled by the css-file</h1>
+
+    <p>exercise:</p>
+    <ul>
+      <li>create a new folder and open the new folder with vs code</li>
+      <li>create a new html-file (with correct html-markup)</li>
+      <li>
+        add some elements (p, h1, div) and add the style-attribute for this
+        elements and check if the styling works
+      </li>
+      <li>
+        inside the head: create a style-element and try styling a p-element with
+        a css-rule which should change the way your p-element looks
+      </li>
+      <li>
+        create a new file with name "your-name.css" (important:
+        css-file-extension)
+        <ul>
+          <li>
+            inside the new created css-file: create a new css-rule for an
+            h2-element
+          </li>
+          <li>
+            link your newly created css-file to your html-file with the
+            link-element
+          </li>
+          <li>
+            check if your h2-element looks accordingly your defined css-rule
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>
