@@ -1,0 +1,68 @@
+.bg-img-example {
+  height: 10rem;
+
+  background-image: url(my-bg.jpg);
+  background-size: cover;
+  /* default for background-reapeat is the value "repeat"
+  most of the time you want to overwrite it to "no-repeat"
+  */
+  background-repeat: no-repeat;
+  background-position: center;
+
+  color: green;
+}
+
+.bg-img-shorthand-example {
+  height: 10rem;
+  background: no-repeat url(my-bg.jpg);
+}
+
+.my-img-bad-idea {
+  /* when defining the size of an image via width and height,
+    it will stretch the image and not respect the original ratio
+    and as a result this might look very bad
+    */
+  width: 20rem;
+  height: 2rem;
+}
+
+.my-img-bether-idea {
+  /* with max-width and max-height you can make sure 
+    that the image will not exceed the specified size,
+    but also it will preserve the original ratio */
+  max-width: 20rem;
+  max-height: 2rem;
+}
+
+.responsive-img {
+  /* this is often used to place images inside block containers (like div)
+    so it will not exceed the size of the parent and you can 
+    size the parent like you want and the image will always look correctly
+    */
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.my-cool-element {
+  height: 20rem;
+  width: 8rem;
+}
+
+.my-text {
+  /* font-size respect every unit, 
+    but you should always use absolute values like
+    pixel (px) or rem
+    using relative values like vw or percentage is possible
+    but really not recommended, because this makes it really hard
+    to create a predictable design
+    */
+  font-size: 20px;
+  /* 400 is "normal" and the default one,
+   higher values means a thicker font 
+   lower values means a thinner font */
+  font-weight: 700;
+  /* the second value is the fallback font, 
+  this is used when the first font cannot be loaded
+   for whatever reason (like bad network connection, ...) */
+  font-family: "Roboto", sans-serif;
+}

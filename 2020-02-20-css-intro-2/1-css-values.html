@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="1-css.css" />
+  </head>
+  <body>
+    <!-- 
+        we introduced some units:
+        - the px-unit (px stands for pixel)
+        - the rem-unit (1rem means 16px - most of the time)
+            in fact the rem unit depends on the html font-size (per  default 16px)
+              - cousin of the rem-unit: em-unit (we will not use it)
+        - the percentage unit 
+        - vw- and vh-unit (vw means viewport-width, vh means viewport-height)
+     -->
+
+    <div class="px-example">px-example</div>
+
+    <div class="rem-example">rem-example</div>
+
+    <!-- the percentage value always depends on the parent-element:  -->
+    <!-- here the parent is the body, which is per default the size of your window
+    so this element will not have an absolute width, but it depends of the size of your window
+    -->
+    <div class="percentage-example">percentage-example</div>
+
+    <div class="rem-example">
+      <!-- now the parent is the div-element withthe class rem-example,
+            so this element will always have 50% width of the parent width
+             (the parent width is here 10rem => 
+             this means the percentage-example will always be 5rem here:)
+         -->
+      <div class="percentage-example">
+        percentage-example inside rem-example
+      </div>
+    </div>
+
+    <!-- the viewport-width only depends on the window-size: -->
+    <div class="vw-example">vw-example</div>
+    <p>spacer</p>
+    <div class="rem-example">
+      <!-- also here the element will have a width of 50% of your window-width
+        this means it will exceed the size of the parent
+        -->
+      <div class="vw-example">vw-example inside rem-example</div>
+    </div>
+
+    <div class="vh-example">vh-example</div>
+
+    <div class="mixing-vh-vw-example">
+      mixing-vh-vw-exampl
+    </div>
+
+    <div class="percentage-height-example">
+      percentage-height-example
+    </div>
+
+    <p>spacer</p>
+    <div class="rem-example">
+      <div class="percentage-height-example">
+        percentage-height-example inside rem-example
+      </div>
+    </div>
+
+    <p>exercise:</p>
+    <ul>
+      <li>create a new folder and open the folder in vs code</li>
+      <li>create a new html and css file (link them)</li>
+      <li>
+        try playing around with the different units (use background-colors to
+        actually see sth)
+      </li>
+      <li>
+        try using all different units: px, rem, percentage, vw, vh (use them
+        with the width and height properties)
+      </li>
+      <li>
+        try always to use div-elements
+      </li>
+    </ul>
+  </body>
+</html>

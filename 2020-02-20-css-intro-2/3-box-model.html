@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="3-css.css" />
+  </head>
+  <body>
+    <div>
+      <!-- the anchor-element is per default a so called
+    "inline element"-->
+      <!-- an inline element will only use the space it needs  -->
+      <!-- inline elements will ignore width and height:  -->
+      <a class="inline-ele-example" href="#">
+        one link
+      </a>
+      <a href="#">another link</a>
+    </div>
+
+    <p style="margin-top: 4rem;">
+      This is some text
+      <a href="https://google.com">with a link</a>
+      included
+    </p>
+
+    <!-- some inline elements example: -->
+    <a href="#">this is an inline element</a>
+    <em>so is this</em>
+    <b>and this</b>
+    <div class="img-wrapper">
+      <img
+        class="img-class"
+        src="https://i.ytimg.com/vi/Bor5lkRyeGo/hqdefault.jpg"
+        alt="and this is an inline element too"
+      />
+    </div>
+
+    <!-- the paragraph and the div-element are per default block elements -->
+    <!-- a block element will per default use the complete available width
+    (like width: 100%)
+    a block element will always cause the next element be on the next line
+    -->
+    <!-- examples for block elements: -->
+    <p>
+      this is a block
+    </p>
+    <div>
+      and so is this
+    </div>
+    <h1>h1 to h6 are also block elements</h1>
+
+    <div class="next-default-box-model"></div>
+
+    <div class="default-box-model-example"></div>
+
+    <div class="border-box-model-example"></div>
+    <div class="next-border-box-model"></div>
+
+    <p>next exercises:</p>
+    <ul>
+      <li>create a new html page + css file</li>
+      <li>
+        create some inline elements (a - anchor, img - image) and try using the
+        width,height, margin and padding for this elements (spoiler: they will
+        not work like you expect)
+      </li>
+      <li>
+        create some div-elements with the default box model and try to create
+        them so that they have the same printed width (visually) but with
+        different padding and border
+      </li>
+      <li>
+        create some div-elements with the border-box model (box-sizing:
+        border-box) and try to create them so that they have the same printed
+        width (visually) but with different padding and border
+      </li>
+    </ul>
+  </body>
+</html>

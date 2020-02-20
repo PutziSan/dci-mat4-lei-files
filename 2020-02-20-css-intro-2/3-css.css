@@ -1,0 +1,57 @@
+.inline-ele-example {
+  background-color: indianred;
+  /* inline elements will ignore the width:  */
+  width: 10rem;
+  /* inline elements will ignore the margin-top and margin-bottom */
+  margin: 5rem;
+  /* padding works with inline-elements */
+  padding: 2rem;
+}
+
+.img-class {
+  width: 100%;
+}
+
+.img-wrapper {
+  background-color: indianred;
+  margin: 5rem;
+  padding: 3rem;
+}
+
+.default-box-model-example {
+  background-color: rebeccapurple;
+  height: 5rem;
+
+  width: 5rem;
+  padding: 1rem;
+  border: 1rem solid blue;
+}
+
+.next-default-box-model {
+  background-color: brown;
+  height: 2rem;
+
+  width: 5rem;
+  padding: 2rem;
+  border: 2px solid red;
+}
+
+.border-box-model-example {
+  box-sizing: border-box;
+  background-color: gold;
+  height: 5rem;
+
+  width: 5rem;
+  padding: 1rem;
+  border: 1rem solid red;
+}
+
+.next-border-box-model {
+  box-sizing: border-box;
+  background-color: brown;
+  height: 2rem;
+
+  width: 5rem;
+  padding: 2rem;
+  border: 2px solid red;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="2-css.css" />
+  </head>
+  <body>
+    <div class="sizing-example">
+      sizing-example
+    </div>
+
+    <div class="sec-example"></div>
+
+    <!-- the br (break) element should only 
+        be used inside text to insert a linebreak -->
+    <div>first example<br />this should stand on the next line</div>
+    <!-- do not use the br-element to create empty spaces between elements
+    => use margin for that! -->
+    <div>next example</div>
+
+    <div class="margin-top-example">
+      margin-top-example
+    </div>
+
+    <div class="mix-margin-example">
+      mix-margin-example
+    </div>
+
+    <div class="margin-shorthand-example">
+      margin-shorthand-example
+    </div>
+
+    <div class="margin-shorthand-2-example">
+      margin-shorthand-2-example
+    </div>
+
+    <div class="padding-shorthand">
+      padding-shorthand
+    </div>
+
+    <div>
+      some content
+    </div>
+
+    <p>exercise</p>
+    <ul>
+      <li>create a new html and css file (link them)</li>
+      <li>
+        create some div-elements with classes to test out the spacing abilities
+      </li>
+      <li>
+        use padding and margin in every possible combination (try using the
+        explicite syntax like margin-bottom and also try using the shorthand
+        syntax like margin: 1rem 2rem (the same for padding)
+      </li>
+      <li>
+        check out how margin and padding working together and how different
+        elements workuing together while using margin and padding
+      </li>
+      <li>
+        extra: check the mdn documentation for margin and padding
+      </li>
+    </ul>
+
+    <!-- margins of the same area (sibling elements with defined margins)
+        using the space of the other element and only 
+        if they need more space than it is available then 
+        the margin will effect the rendered result
+      -->
+    <div class="margin-ex-2">margin-ex-2</div>
+    <!-- the space between this to elements is in fact
+         2 rem and not 4 rem  -->
+    <div class="margin-ex-3">margin-ex-3</div>
+
+    <div class="outer-container">
+      <div class="inner-element">
+        content
+      </div>
+    </div>
+
+    <div class="border">
+      this content will have a border
+    </div>
+
+    <div class="border-shorthand">
+      border-shorthand
+    </div>
+
+    <div class="circle"></div>
+
+    <p>exercise:</p>
+    <ul>
+      <li>
+        again padding+margins: try nesting your elements with multiple divs and
+        use different paddings and margins for every element (and also different
+        background-colors) and have a look how they relate to each other
+      </li>
+      <li>
+        again margin: create multiple divs as siblings (reminder: two siblings
+        have the same parent element) and add margins for the siblings, check
+        how the margins interact
+      </li>
+      <li>
+        create some elements with a border, use the explicite syntax and the
+        shorthand syntax
+      </li>
+      <li>
+        try create an element with only the border-radius
+      </li>
+      <li>
+        mix everything together: create elements with margin, padding and border
+      </li>
+    </ul>
+  </body>
+</html>

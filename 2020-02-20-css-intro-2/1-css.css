@@ -1,0 +1,53 @@
+.px-example {
+  background-color: aqua;
+  width: 100px;
+  height: 100px;
+}
+
+.rem-example {
+  background-color: red;
+  /* 1rem are 16px => 10rem are 160px */
+  width: 10rem;
+  height: 10rem;
+}
+
+.percentage-example {
+  background-color: aqua;
+  /* try using percenbtage-values from 1 to 100%  */
+  width: 50%;
+  height: 5rem;
+}
+
+.vw-example {
+  background-color: rebeccapurple;
+  /* 50vw means 50% of the window-width */
+  width: 50vw;
+  height: 5rem;
+}
+
+.vh-example {
+  background-color: saddlebrown;
+  width: 5rem;
+  /* 50vh means 50% of the viewport height */
+  height: 50vh;
+}
+
+.mixing-vh-vw-example {
+  background-color: salmon;
+  /* this is a bad idea:
+  it works, but the cases where you really want this behavior are quite rare
+  #dontdothisathome
+   */
+  width: 50vh;
+  height: 10rem;
+}
+
+.percentage-height-example {
+  background-color: slategrey;
+  width: 10rem;
+  /* percentage with height is not very useful (most of the time)
+  if you feel like you want to use a height with percentage value,
+  in mnost cases you should use the vh (viewport-height) value
+  */
+  height: 50%;
+}

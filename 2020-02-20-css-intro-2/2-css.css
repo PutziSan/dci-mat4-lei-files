@@ -1,0 +1,103 @@
+.sizing-example {
+  background-color: teal;
+
+  /* with padding you can define the space
+   between the content and the edge of your element  */
+  padding: 1rem;
+  /* with margin you can control the space outside the element
+  and between elements
+  */
+  margin: 1rem;
+}
+
+.sec-example {
+  background-color: tomato;
+  height: 2rem;
+}
+
+.margin-top-example {
+  background-color: yellowgreen;
+  /* you can combine the different margin-properties like you want */
+  margin-top: 1rem;
+  margin-right: 2rem;
+}
+
+.mix-margin-example {
+  background-color: brown;
+  margin: 2rem;
+  margin-bottom: 0;
+}
+
+.margin-shorthand-example {
+  background-color: cornflowerblue;
+  /* the shorthand syntax can be used 
+    to apply different margin-values 
+    without using the margin-left, -right, ... values */
+  margin: 1rem 2rem;
+  /* the above shorthand is equivalent to this: */
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.margin-shorthand-2-example {
+  background-color: crimson;
+  /* top | right | bottom | left */
+  margin: 1rem 2rem 3rem 4rem;
+}
+
+.padding-shorthand {
+  padding: 1rem 2rem;
+  /* the above shorthand is equivalent to this: */
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.margin-ex-2 {
+  background-color: crimson;
+  margin-bottom: 2rem;
+}
+
+.margin-ex-3 {
+  background-color: cyan;
+  margin-top: 2rem;
+}
+
+.outer-container {
+  margin: 2rem;
+  padding: 2rem;
+  background-color: darkgreen;
+}
+
+.inner-element {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: darkred;
+}
+
+.border {
+  background-color: rebeccapurple;
+  /* declaring only the width of the border is not enough
+  you need to define at least the width, the style and the color
+  */
+  border-width: 2px;
+  border-color: yellow;
+  border-style: solid;
+  border-radius: 9999px;
+}
+
+.border-shorthand {
+  background-color: tomato;
+  border: 2px solid hsl(0, 0%, 0%);
+}
+
+.circle {
+  background-color: indianred;
+  width: 10rem;
+  height: 10rem;
+  /* border-radius is applied even if you do not show a border  */
+  border-radius: 9999px;
+}
