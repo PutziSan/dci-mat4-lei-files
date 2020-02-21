@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="1-css-grid.css" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="col-1">
+        <div>
+          <!-- you can place inside your columns any html and css
+             structure like you want and like you already know -->
+          <p>some content</p>
+          <img
+            class="img-responsive"
+            src="https://webkit.org/demos/srcset/image-src.png"
+            alt="my image"
+          />
+        </div>
+      </div>
+      <div class="col-2">
+        col-2
+      </div>
+      <div class="col-3">
+        col-3
+      </div>
+
+      <div class="col-4">
+        col-4
+      </div>
+      <div class="col-2">
+        col-2 (even this is col-2 as a class-name it will placed correctly by
+        the grid)
+      </div>
+      <div class="col-3">
+        col-3 (#thesamehere)
+      </div>
+    </div>
+
+    <div class="col-1">
+      col-1 vbut outside -- this will not be affected by the grid, because it is
+      not a child of the grid
+    </div>
+
+    <p>exercise</p>
+    <ul>
+      <li>create a new folder, open the folder with vs code</li>
+      <li>
+        create a new html file + css file (maybe restart vs code to see the "go
+        live" on the bottom of vs code)
+      </li>
+      <li>
+        create multiple grids:
+        <ul>
+          <li>create a 3 column grid</li>
+          <li>create a 2 row grid</li>
+          <li>create a grid with 2 columns and 3 rows</li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="sec-grid">
+      <div class="col-1">
+        <!-- you can produce sample text with typing "lorem" and hitting enter -->
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
+        nesciunt ullam placeat aperiam ut hic odit illo. Qui minima obcaecati,
+        impedit labore alias fugit voluptate rerum fuga minus in soluta.
+      </div>
+      <div class="col-2"></div>
+      <div class="col-3"></div>
+      <div class="col-4">
+        col-4
+      </div>
+      <div class="col-2">
+        col-2
+      </div>
+      <div class="col-3">
+        col-3
+      </div>
+    </div>
+
+    <div style="margin-top: 5rem;" class="grid-template-area-example">
+      <div class="fb-header">fb-header</div>
+      <div class="fb-navbar">fb-navbar</div>
+      <div class="fb-content">
+        fb-content
+      </div>
+      <div class="fb-info">fb-info</div>
+    </div>
+
+    <p>exercise:</p>
+    <ul>
+      <li>
+        try creating some grids with using the fr-unit for your columns and the
+        auto unit for your rows
+      </li>
+      <li>try mixing absolute values and fr/auto in rows/columns</li>
+      <li>
+        create a new grid like the facebook-example and try to recreate it with
+        grid-template-areas for the parent-grid and grid-area for the cells
+      </li>
+    </ul>
+  </body>
+</html>

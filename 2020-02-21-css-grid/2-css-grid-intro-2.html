@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="2-css.css" />
+  </head>
+  <body>
+    <!-- the first section of a webpage which a user sees 
+        is called the "hero-section". Some people also refer to it as
+    "above the fold".
+    You can create a custom hero-section by 
+    setting a height of 100vh (100 viewport-height) to your first element
+    ! be aware: the body element has a defined margin of 8px (for some browsers) !
+    => to remove this margin you should overwrite -->
+    <div class="grid-align-example">
+      <div>
+        <h1 class="text-center">my very cool content</h1>
+      </div>
+    </div>
+
+    <div class="grid-align-multi-columns-example">
+      <div class="col-1">col-1</div>
+      <div class="col-2">col-2</div>
+      <div class="col-3">col-3</div>
+      <div class="col-4">col-4</div>
+    </div>
+
+    <p>exercise</p>
+    <ul>
+      <li>create a new html and css file</li>
+      <li>
+        create a "hero-section" (or "above the fold"-section) with the vh unit
+      </li>
+      <li>
+        create some content inside the hero-section and center it on the page
+        (hint: display grid + align-items / justify-items)
+      </li>
+      <li>
+        create another grid with at least 2 columns / 2 rows and try how
+        centering via align-items and jusitfy-items works
+      </li>
+      <li>
+        use the chrome inspect tool to inspect your grid parent and grid items
+      </li>
+      <li>
+        extra: try nesting multiple grids inside another grid
+      </li>
+    </ul>
+  </body>
+</html>

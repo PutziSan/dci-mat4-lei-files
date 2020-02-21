@@ -1,0 +1,109 @@
+.grid-container {
+  display: grid;
+  /* grid-template-columns definesn the columns of the grid
+  you can define as much columns as you want
+  one column is defined via a value with a unit 
+  (unit is e.g. pixel (px), rem, percentage,
+   viewport-width (vw), viewport-height (vh)
+  multiple columns are defined using an empty space (" ")
+  */
+  /* the defined columns needs to match the correct
+  html structure, so for every column you are defining via css
+  you also should define a corresponding html element 
+  as a child of this grid
+  */
+  grid-template-columns: 10rem 10rem 10rem;
+  /* like grid-template-columns with grid-template-rows
+  you can define multiple rows, you can use any unit you already know (px, rem, ...)
+  be aware the if you define grid-template-columns
+  and grid-template-rows that your actual number of cells is:
+  count of columns X count of rows
+  so this means at the moment thjat you have to define
+  this amount of html elements as children of your grid
+  so that this will work
+  */
+  grid-template-rows: 10rem 10rem;
+  /* one single element inside the grid which defined via
+  columns and rows is called a "cell"  */
+}
+
+.col-1 {
+  background-color: aqua;
+}
+
+.col-2 {
+  background-color: brown;
+}
+
+.col-3 {
+  background-color: chocolate;
+}
+
+.col-4 {
+  background-color: rebeccapurple;
+}
+
+.img-responsive {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.sec-grid {
+  display: grid;
+  /* the fractaional unit (fr) will take all the place available
+  but it will always look for all other defined values and
+  if you define the fr multiple times than it will make sure
+  that every fr unit is the same size
+  */
+  grid-template-columns: 10rem 2fr 1fr;
+  /* the value "auto" mimics the default behavior for the height
+  so this will create rows with an adaptive height 
+  */
+  grid-template-rows: auto auto;
+}
+
+/*
+the facebook grid looked like:
+------HEADER-SECTION (blue)---------
+----NAVBAR---CONTENT-----INFO-------
+*/
+
+.grid-template-area-example {
+  display: grid;
+  grid-template-columns: 5rem 1fr 5rem;
+  grid-template-rows: 4rem auto;
+  /* with grid-templaten areas you can manage
+   how and where the cells should appear  */
+  /* for every row you need to define to row-definition 
+   on a new line in quotation marks */
+  /* for every column you need to define a name of the column
+    and  divide them by an empty space */
+  grid-template-areas:
+    /* this defines the columns seperated by spaces like:  */
+    /* first-col     second-col   third-col    */
+    "col-fb-header col-fb-header col-fb-header" /* first row */
+    "col-fb-navbar col-fb-content col-fb-info" /* second row */;
+  /* the names you created here need to conform to the names
+    of your cells with the grid-area attribute  */
+  /* do not be confused by the class-name 
+    (which is the selector for your html elements) 
+    and the value of grid-area, which will be used by grid-template-areas*/
+}
+
+.fb-header {
+  background-color: blue;
+  /* this name will be used by the grid-template-areas:  */
+  grid-area: col-fb-header;
+}
+.fb-navbar {
+  background-color: yellow;
+  grid-area: col-fb-navbar;
+}
+.fb-content {
+  background-color: tomato;
+  grid-area: col-fb-content;
+}
+.fb-info {
+  background-color: purple;
+  grid-area: col-fb-info;
+}
