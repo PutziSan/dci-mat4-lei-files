@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+}
+
+.hero {
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.cool-link {
+  padding: 0.5rem 1rem;
+  background-color: hsl(125, 45%, 25%);
+  color: hsl(125, 45%, 80%);
+  /* remove the underline from the link:  */
+  text-decoration: none;
+  border-radius: 1rem;
+  /* text-transform to make the text uppercase */
+  text-transform: uppercase;
+}
+
+/* this is called "pseudo-class" or "pseudo-selector"  */
+/* these styles here will only apply,
+when hovering over this element */
+.cool-link:hover {
+  background-color: hsl(125, 45%, 10%);
+  color: hsl(125, 45%, 95%);
+}
+
+.my-secret-image {
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-image: url(https://thumbs.dreamstime.com/b/pansy-viola-flower-orange-purple-112374816.jpg);
+}
+
+.my-secret-image:hover {
+  background-image: url(https://i.ytimg.com/vi/rvP3dlIbwBU/maxresdefault.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.hover-me-text {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+/* this styles will applym for anchors where
+the href is already visited by the visitor  */
+.visited-link-example:visited {
+  color: indianred;
+}

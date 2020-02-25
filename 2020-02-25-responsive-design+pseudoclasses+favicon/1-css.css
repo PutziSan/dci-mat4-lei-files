@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 100vh;
+}
+
+/* with media-queries you can define
+minimum or maximu-widths for your firther css 
+You should always wrtite your responsive styles
+at the end of the file or at least behind
+your overwriting target (if not the overwriting
+will not work) */
+@media (min-width: 820px) {
+  /* every css rule which is defined inside this
+    media query will only apply if the clients width
+    is greater than 820px  */
+  /* css for desktop: */
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+/* it is a good idea to start with your mobile design,
+which is in most cases a simple one-column design
+and then create some overwriting rules with
+a media-query and min-width, because changing
+a mobile view to a desktop view can be quite simple
+but changing a multi-column-design to a mobile design
+can be challenging.
+=> THIS IS CALLED "MOBILE FIRST DESIGN" */
+.col-1 {
+  background-color: aqua;
+  padding: 0.5rem;
+}
+.col-2 {
+  background-color: green;
+  padding: 0.5rem;
+}
+.col-3 {
+  background-color: red;
+  padding: 0.5rem;
+}
+
+/* you can also use a max-width with media-queries: */
+@media (max-width: 820px) {
+  .col-2 {
+    background-color: rebeccapurple;
+  }
+}
+
+.max-width-demo-container {
+  display: grid;
+  justify-items: center;
+}
+
+.max-width-demo {
+  max-width: 1200px;
+}
+
+.max-width-demo-margin-auto {
+  max-width: 1200px;
+  /* margin-left and amrgin-right auto will center the content
+  but try not using this very often, because it 
+  can make the design harder, bether idea is most often
+  to use a grid design with justify-items
+  */
+  margin-left: auto;
+  margin-right: auto;
+}
