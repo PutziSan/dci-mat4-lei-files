@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- we are reusing the stylesheet for every page,
+    to create a consistent layout and to not repeat
+    ourself always again (only write the styles once). -->
+    <!-- "slogan": keep DRY => 
+        DRY: Don't Repeat Yourself  -->
+    <!-- use DRY with caution: overusing this principle
+        can make your code and project unnecessarily complex
+        e.g. a navigation-header in your html-structure
+        can be copy and pasted on every page (at the moment).
+        -->
+    <link rel="stylesheet" href="1-styles.css" />
+  </head>
+  <body>
+    <!-- we are re-using the page-header from our 1-styles.css file -->
+    <h1 class="page-header">
+      Homepage
+    </h1>
+
+    <ul>
+      <li>
+        <a href="/">landing page</a>
+      </li>
+      <li>
+        <!-- this will link to the file "home.html"
+            which should be created at the
+             "root" of your project
+          -->
+        <a href="/home.html">link to home</a>
+      </li>
+      <li>
+        <a href="/about-me.html">
+          about me
+        </a>
+      </li>
+      <li>
+        <a href="/portfolio">
+          Portfolio
+        </a>
+      </li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- "installing" the 3rd party code: 
+        furtger information about how this works under
+        https://github.com/daneden/animate.css  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+  </head>
+  <body>
+    <p>we want to show two things:</p>
+    <ul>
+      <li>using external code (so called 3rd party code)</li>
+      <li>
+        how can we use some basic JavaScript together with the external service
+      </li>
+    </ul>
+
+    <!-- using the animated.css library: documentation under
+    https://github.com/daneden/animate.css#animations -->
+    <!-- this animation will fire directly after the page loads: -->
+    <p class="animated bounce">
+      My content, please be animated!
+    </p>
+    <!-- animation delay example: https://github.com/daneden/animate.css#delay-class -->
+    <p class="animated bounce delay-3s">
+      My content, please be animated, but wait a few second!
+    </p>
+    <!-- anything above here has nothing to do with javascript!
+        This is only about using 3rd-party code (animate.css). 
+     -->
+
+    <p id="my-element-for-animation">
+      My content, please be animated if you click me!
+    </p>
+    <!-- the script tag is a bit like the style-tag.
+    You can define inside a script-tag some javascript.
+    Also: inside the script tag VS Code and code completion will work differently -->
+    <script>
+      // in javascript, comments are defined with to leading slashs
+      // like "//"
+
+      // function code copied from
+      // https://github.com/daneden/animate.css#usage-with-javascript
+      // this function can be used later without redifining it:
+      function animateCSS(element, animationName, callback) {
+        const node = document.querySelector(element);
+        node.classList.add("animated", animationName);
+
+        function handleAnimationEnd() {
+          node.classList.remove("animated", animationName);
+          node.removeEventListener("animationend", handleAnimationEnd);
+
+          if (typeof callback === "function") callback();
+        }
+
+        node.addEventListener("animationend", handleAnimationEnd);
+      }
+
+      // getElementById will bring you the defined element,
+      // so you can use it:
+      document.getElementById("my-element-for-animation").onclick = function() {
+        //  use the function defined before:
+        animateCSS(
+          // the element-selector, like css-notation:
+          "#my-element-for-animation",
+          // the desired animation
+          // check https://github.com/daneden/animate.css#animations
+          // for possible values
+          "bounce"
+        );
+      };
+    </script>
+
+    <p>
+      next exercise:
+    </p>
+    <ul>
+      <li>create a new html file</li>
+      <li>use the animate.css library (documentation link in slack)</li>
+      <li>add the animate-css stylesheet inside the head</li>
+      <li>create some animated elements on rendering</li>
+      <li>add a delay to an animated element</li>
+      <li>
+        try to create an animation with some javascript, try using the script I
+        have written above and try to adapt it so it will work for you
+      </li>
+      <li>
+        try to create another html-file, install animate.css there and create
+        the click-script via an external javascript-file
+      </li>
+    </ul>
+  </body>
+</html>

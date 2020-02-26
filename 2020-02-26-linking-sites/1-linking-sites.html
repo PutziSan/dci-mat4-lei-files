@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="1-styles.css" />
+  </head>
+  <body>
+    <div class="page-full-height">
+      <!-- we are re-using the page-header from our 1-styles.css file -->
+      <!-- side info: the h1 element defines
+         the most important headline for your page.
+         You should define exactly ONE h1-element.
+      For your next headlines you should use
+      the correct order (after h1 comes an h2, ...) 
+      and you should avoid to skip an hN element
+      (NOT GOOD: after h1 comes an h3 element).
+     -->
+      <h1 class="page-header">lesson 1</h1>
+
+      <ul>
+        <li>
+          <!-- this will link to the file "home.html"
+            which should be created at the
+             "root" of your project
+          -->
+          <a href="/home.html">link to home</a>
+        </li>
+        <li>
+          <a href="/about-me.html">
+            about me
+          </a>
+        </li>
+      </ul>
+
+      <p>content of this page:</p>
+      <ul>
+        <!-- a link with a hashtag (#) is called 
+            "jump links" or "hashtag link".
+        If the browser get a jump link,
+        it will search for an element with the
+        given id after the hashtag:
+        e.g. "#son-goku" will look for an element
+        with the id "son-goku"
+         -->
+        <li><a href="#son-goku">Son Goku</a></li>
+        <li><a href="#vegeta">Vegeta</a></li>
+
+        <li><a href="#footer">footer</a></li>
+      </ul>
+    </div>
+
+    <div class="page-full-height">
+      <h2 id="son-goku">Son Goku</h2>
+      <p>
+        Crazy Sayajin ... Lorem, ipsum dolor sit amet consectetur adipisicing
+        elit. Nobis libero nesciunt officiis, modi at nam nostrum temporibus
+        odio necessitatibus ab, iusto molestias delectus commodi doloribus sit,
+        reiciendis blanditiis ipsam laborum!
+      </p>
+    </div>
+    <div class="page-full-height">
+      <h2 id="vegeta">Vegeta</h2>
+      <p>
+        Crazy Sayajin ... Lorem, ipsum dolor sit amet consectetur adipisicing
+        elit. Nobis libero nesciunt officiis, modi at nam nostrum temporibus
+        odio necessitatibus ab, iusto molestias delectus commodi doloribus sit,
+        reiciendis blanditiis ipsam laborum!
+      </p>
+    </div>
+
+    <!-- the id-attribute works with every element
+    which is rendered by the browser. So also the
+    hashtag-link ("#footer") will work with any element
+    -->
+    <div id="footer" class="page-full-height">
+      my footer content
+    </div>
+
+    <div class="page-full-height">
+      <p>exercise:</p>
+      <ul>
+        <li>create a new project and new html/css-files</li>
+        <li>
+          create a navigation with 2 or 3 pages (e.g. home, about me, ...)
+        </li>
+        <li>
+          create for every page the corresponding html file -- make sure that
+          your navigation links are working after you created the pages
+        </li>
+        <li>
+          use one single css file to use shared classes
+        </li>
+        <li>
+          create a sub-folder with sub-sections of your page (e.g.
+          about-me/address.html and about-me/map.html) -- try again to use your
+          single css-file to also style this file (be aware: use ".." to link
+          the file)
+        </li>
+        <li>
+          create another page with jump-links and sections
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
